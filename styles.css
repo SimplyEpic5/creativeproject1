@@ -1,0 +1,298 @@
+body {
+  font-family: Helvetica;
+  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* The Masonry Brick */
+.item {
+  background: rgba(0, 0, 0, 0);
+  padding: 0em;
+  margin: 0 0 0em;
+}
+
+.masonry {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  column-gap: 0;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+.item img {
+  width: 100%;
+  opacity: 100%;
+}
+
+.item {
+  position: relative;
+}
+
+.item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(200, 200, 200, 0);
+}
+
+.masonry .item:hover img {
+  opacity: 0.5;
+}
+
+.masonry .item:hover p {
+  color: rgba(200, 200, 200, 1);
+}
+
+.navbar a {
+  color: rgb(100, 0, 0);
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+.split {
+  height: 100%;
+}
+
+@media only screen and (min-width: 990px){
+  .right {
+    float: right;
+    width: 50%;
+  }
+
+  .left {
+    float: left;
+    width: 50%;
+  }
+
+  .split img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50% - 230px);
+    margin-bottom: auto;
+    border-radius: 75pt;
+  }
+}
+@media only screen and (max-width: 989px){
+  .right {
+    width: 100%;
+    float: none;
+  }
+
+  .left {
+    width: 100%;
+    float: none;
+  }
+
+  .split img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+    border-radius: 75pt;
+  }
+}
+.right:hover img{
+  opacity: .5;
+}
+.left:hover img{
+  opacity: .5;
+}
+
+@media only screen and (max-width: 519px){
+  .app .title img {
+    width: calc(100% - 40px);
+    margin: 20px;
+    border-radius: 40pt;
+  }
+  .app .title h1 {
+    float: none;
+    margin: 20px;
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 520px){
+  .app .title img {
+    float: left;
+    width: 230px;
+    margin: 20px;
+    border-radius: 40pt;
+  }
+  .app .title h1 {
+    float: right;
+    width: calc(100% - 270px);
+    margin-top: 10px;
+    margin-bottom: 270px;
+    font-size: 70px;
+  }
+}
+
+.title a {
+  color: #30b0c5;
+}
+
+.app h2 {
+  color: rgb(220, 220, 220);
+  font-size: 40px;
+  margin: 20px;
+}
+
+.app h3 {
+  color: rgb(220, 220, 220);
+  font-size: 30px;
+  margin: 20px;
+}
+
+.app p {
+  font-size: 15px;
+  margin: 20px;
+  color: rgb(140, 140, 140);
+}
+
+.scrollview {
+  width: calc(100% - 40px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 20px;
+}
+
+.block {
+  display: inline-block;
+  height: 400px;
+}
+
+.block img {
+  height: 100%;
+  margin: 5px;
+}
+
+
+
+.landing {
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.landing h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 509px) {
+  .landing h1 {
+    font-size: 50px;
+  }
+}
+
+.landing img {
+  width: 100%;
+}
+
+.canvas {
+ position: relative;
+ display: inline-block;
+ background: #30b0e5;
+ width: 100%;
+}
+.canvas img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 450px;
+  opacity: 0.6;
+}
+
+.intro h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin: 50px;
+}
+
+.intro p {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 519px){
+  .intro p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 520px){
+  .intro p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+
+
+
+.footer {
+  background-color: rgb(30, 35, 40);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 12px;
+  font-weight: 100;
+  margin: 0px;
+  margin-left: 5px;
+  margin-top: 2px;
+  color: rgb(230, 230, 230);
+  text-align: center;
+}
+.footer a {
+  color: #30b0e5;
+}
