@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica;
-  
+
 }
 
 html {
@@ -162,6 +162,10 @@ body {
 }
 
 .title a {
+  color: #30b0c5;
+}
+
+.app p a {
   color: #30b0c5;
 }
 
